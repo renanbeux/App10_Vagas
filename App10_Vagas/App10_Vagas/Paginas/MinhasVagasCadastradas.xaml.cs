@@ -50,5 +50,10 @@ namespace App10_Vagas.Paginas
             ConsultarVagas();
         }
 
+        public void PesquisarAction(object sender, TextChangedEventArgs args)
+        {
+            ListaVagas.ItemsSource = Lista.Where(a => a.NomeVaga.Contains(args.NewTextValue)).ToList();
+        }
+
     }
 }

@@ -7,10 +7,10 @@
             <StackLayout Orientation="Horizontal">
                 <Label Text="Vagas" FontSize="24"/>
                 <Label Text="Encontre seu emprego aqui" FontSize="12"/>
-            </StackLayout>            
-            <Entry Placeholder="Pesquisar"/>
+            </StackLayout>
+            <Entry Placeholder="Pesquisar" TextChanged="PesquisarAction"/>
             <Label Text="" x:Name="lblCount" />
-            <ListView x:Name="ListaVagas">
+            <ListView x:Name="ListaVagas" HasUnevenRows="True">
                 <ListView.ItemTemplate>                    
                     <DataTemplate>
                         <ViewCell>
